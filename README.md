@@ -1,0 +1,1 @@
+this is a newsleter signup form built with Javascript and the Mailchimp API
