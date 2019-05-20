@@ -1,0 +1,28 @@
+{
+  "name": "newsletter",
+  "version": "1.0.0",
+  "description": "A newsletter signup form built with the Mailchimp API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app",
+    "dev": "nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VinceRell/newsletterform.git"
+  },
+  "author": "Vincent Rellum",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VinceRell/newsletterform/issues"
+  },
+  "homepage": "https://github.com/VinceRell/newsletterform#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.0",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.0"
+  }
+}
