@@ -23,6 +23,7 @@
     "request": "^2.88.0"
   },
   "devDependencies": {
-    "nodemon": "^1.19.0"
+    "nodemon": "^1.19.0",
+    "superagent": "^5.0.5"
   }
 }

@@ -28,7 +28,7 @@ app.post("/signup", (req, res) => {
        members: [
            {
                email_address: email,
-               staus: "subscribed",
+               status: "subscribed",
                merge_fields: {
                    FNAME: firstName,
                    LNAME: lastName
@@ -41,10 +41,11 @@ app.post("/signup", (req, res) => {
    const postData = JSON.stringify(data);
 
    const options = {
-       url: 'https://us20.api.mailchimp.com/3.0/lists/c756379f1a',
+       url: 'https://us20.api.mailchimp.com/3.0/lists/[redacted]',
        method: 'POST',
        headers: {
-           Authorization: 'auth 01cb2db8a3a7a4449c6524a652ee30f8-us20'
+           'Content-Type': 'application/json',
+           'Authorization': 'apikey [redacted]'
        },
        body: postData
    }
@@ -59,7 +60,9 @@ app.post("/signup", (req, res) => {
                 res.redirect("/fail.html");
             }
         }
+        console.log(response.statusCode);
    });
+
 });
 
 const PORT = process.env.PORT || 5000;
